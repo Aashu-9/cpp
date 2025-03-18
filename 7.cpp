@@ -1,3 +1,4 @@
+//pratical 2 no3
 #include <iostream>
 #include <cstring> // For strcpy
 using namespace std;
