@@ -1,26 +1,36 @@
-//function defination inside class 
+//student data
 #include<iostream>
+#include<string.h>
 using namespace std;
-class str
+class student
 { public:
-    float l,b,h;
-    float area()
-    {
-       float a=l*b;
-       return a;
-    }
-    float vol()
-    {
-        float c=l*b*h;
-        return c;
-    }                               
+    
+    string name;
+    int age;
+     
+     void Gdata()
+     {
+        cout<<"Enter your name:"<<endl;
+        getline (cin,name);
+        cout<<"enter your age:"<<endl;
+        cin>>age;
+     }
+     void Pdata()
+     {
+        cout<<" your name is "<<name<<endl;
+        cout<<"your age is "<<age<<endl;
+     }
 };
 int main()
 {
-    str obj1;
-    cout<<"Enter the length ,breath and height respectively to find area and volume of given parameter:\n";
-    cin>>obj1.l>>obj1.b>>obj1.h;
-    cout<<"Area of given parameter is "<<obj1.area()<<endl;
-    cout<<"Volume of given parameter is "<<obj1.vol();
- return 0;
+    student obj1;
+    obj1.Gdata();
+    obj1.Pdata();
+
+
+    student obj2;
+    obj2.Gdata();
+    obj2.Pdata();
+    return 0;
+
 }

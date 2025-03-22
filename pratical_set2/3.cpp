@@ -1,4 +1,4 @@
-//pratical 2 no3
+//A class string pointer as data members & member function
 #include <iostream>
 #include <cstring> // For strcpy
 using namespace std;
