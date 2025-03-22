@@ -1,3 +1,4 @@
+/*Construct a two-dimensional array using dynamic constructors.*/
 #include <iostream>
 using namespace std;
 

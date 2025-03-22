@@ -1,3 +1,4 @@
+/*a program to overload the + and – operators for the complex class.*/
 #include <iostream>
 using namespace std;
 
