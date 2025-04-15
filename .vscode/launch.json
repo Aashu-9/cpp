@@ -1,0 +1,31 @@
+
+    
+        {
+            "version": "2.0.0",
+            "tasks": [
+                {
+                    "label": "build",
+                    "type": "shell",
+                    "command": "g++",
+                    "args": [
+                        "-g",              // Generate debug info
+                        "-std=c++11",      // Use C++11 standard (or c++17 for newer features)
+                        "${file}",         // Current file
+                        "-o",              // Output file
+                        "${fileDirname}/${fileBasenameNoExtension}" // Output to executable with same name
+                    ],
+                    "group": {
+                        "kind": "build",
+                        "isDefault": true  // Makes this the default build task
+                    },
+                    "problemMatcher": ["$gcc"],
+                    "presentation": {
+                        "echo": true,
+                        "reveal": "always",
+                        "focus": false
+                    }
+                }
+            ]
+        }
+
+    
