@@ -9,7 +9,7 @@ class String
  int length; 
  public: 
  String (char *s) 
- {length=strlen(s); 
+ {length=strlen(s);    
     name= new char[length+1]; 
     strcpy(name,s); 
     } 
